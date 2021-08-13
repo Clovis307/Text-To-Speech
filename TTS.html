@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+ <h1> Convertir un text en vocal</h1>
+ <textarea name="text" id="txt" cols="30" rows="10" placeholder="Enter un text ici..."></textarea>
+ <input type="button" value="Ecouter" onclick="testSpeak()">
+<script>
+
+
+    function testSpeak(){
+        const text = document.querySelector('#txt');
+        const text_value = text.value;
+        responsiveVoice.speak(text_value);
+
+    }
+
+</script>
+</body>
+</html>
